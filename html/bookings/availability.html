@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/config/connection.js">
+    <link rel="stylesheet" href="#" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container col-12 sm-6 md-4 lg-2">
+    <h1>PKM Hospital</h1>
+        
+        <div class="header-left">
+            
+                <li onclick="location.href='/index.html'">Home</li>
+                <li>Departments
+                    <ul>
+                        <li onclick="location.href='../departments/gastro.html'">Gastroenterology</li>
+                        <li onclick="location.href='../departments/dermato.html'">Dermatology</li>
+                        <li onclick="location.href='../departments/gyneco.html'">Gynecology</li>
+                        <li onclick="location.href='../departments/gen-sur.html'">General Surgery</li>
+                        <li onclick="location.href='../departments/ent.html'">ENT</li>
+                        <li onclick="location.href='../departments/gen-med.html'">General Medicine</li>
+                        <li onclick="location.href='../departments/neuro.html'">Nuerology</li>
+                        <li onclick="location.href='../departments/osteo.html'">Osteolgy</li>
+                    </ul></li>
+                <li>Bookings
+                    <ul>
+                        <li>Make an Appoinment</li>
+                        <li>Cancel my bookings</li>
+                        <li>view my bookings</li>
+                    </ul>
+                </li>
+                <li>About</li>
+            </div>
+        </div>
+
+
+
+        <form class="booknow" method="post" action="availability.html">
+            <div class="form-data">
+                <h4>Bookings Successful</h4>
+                <label id="label" for="name">Booking Reference #</label>
+                <input id="input" disabled type="text" placeholder="Booking ID"></br>    
+            <label id="label" for="name">Name</label>
+            <input id="input" disabled type="text" value={{this.nameValue}} placeholder={this.name}></br>
+            <label id="label" for="place">Place</label>
+            <input id="input" disabled type="text" placeholder="Your Place"></br>
+            <label id="label" for="age">Age</label>
+            <input id="input" disabled style="float:inherit; width: 45px; margin-left: 216px; " type="number" placeholder="Age"></br>
+            <label id="label" for="dep">Department</label>
+            <select name="select" id="selection" aria-placeholder="select">
+                <option id="options" selected disabled>Department</option>
+                
+
+            </select></br>
+            <label id="label" for="date">Date</label>
+            <input disabled id="input" type="date" name="" id=""></br>
+            <label id="label" for="">Time</label>
+            <select id="selection">
+                <option id="options" selected disabled>Choose Time</option>
+                
+            </select></br>
+            
+        </div></form>
+        <script> 
+            var nameValue = document.getElementById("input-Top").value;
+        </script>
+   
+    
+    
+    <script src="#" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="#" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

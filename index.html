@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="#" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+ </head>
+<body style="height: 100%;">
+   <div class="container col-12 sm-6 md-4 lg-2">
+    <h1>PKM Hospital</h1>
+        
+        <div class="header-left" id="head-left">
+            
+                <li class="hm" onclick="alert('its always home u fool')">Home</li>
+                <li class="ho">Departments
+                    <ul>
+                        <li onclick="location.href='./html/departments/gastro.html'">Gastroenterology</li>
+                        <li onclick="location.href='../html/departments/dermato.html'">Dermatology</li>
+                        <li onclick="location.href='../html/departments/gyneco.html'">Gynecology</li>
+                        <li onclick="location.href='../html/departments/gen-sur.html'">General Surgery</li>
+                        <li class="nav-list" onclick="location.href='../html/departments/ent.html'">ENT</li>
+                        <li onclick="location.href='../html/departments/gen-med.html'">General Medicine</li>
+                        <li onclick="location.href='../html/departments/neuro.html'">Nuerology</li>
+                        <li onclick="location.href='../html/departments/osteo.html'">Osteolgy</li>
+                    </ul></li>
+                <li class="ho">Bookings
+                    <ul>
+                        <li onclick="location.href='./html/bookings/booknow.html'">Make an Appoinment</li>
+                        <li onclick="location.href='./html/bookings/cancel.html'">Cancel my bookings</li>
+                        <li onclick="location.href='./html/departments/#'">view my bookings</li>
+                    </ul>
+                </li>
+                <li class="ho" onclick="location.href='./html/departments/about.html'">About</li>
+                <li class="ho" onclick="location.href='./html/bookings/availability.html'">BBBU</li>
+                <li class="icon">
+                    <i class="fa fa-bars"></i>
+                    <ul>
+                       <li class="min-menu" onclick="location.href='/html/departments/departments.html'">Departments</li>
+                    </ul>
+                </li>
+                
+                    
+                
+                
+                
+
+            </div>
+        </div>
+
+
+        <div class="index-bg">
+            <div class="index-main">
+                <h1 class="index-heading">WE CARE ABOUT</br> YOUR HEALTH</h1>
+            </div>
+        </div>
+        <section class="videos col-12 sm-12 md-4 lg-2" >
+            <video class="myVid" id="vid-slider" src="./img/video/thyroid.mp4" autoplay loop muted controls>
+            </video>
+            <ul class="thumbnail">
+                <li style="margin-left: 82px;" onclick="videoUrl('./img/video/thyroid.mp4')">
+                    <img src="./img/video/thumbnail thyroid.jpg">
+                </li>
+                <li onclick="videoUrl('./img/video/ear1.mp4')">
+                    <img src="./img/video/thumbnail ear.jpg">
+                </li>
+                <li onclick="videoUrl('./img/video/ear2.mp4')">
+                    <img src="./img/video/thumbnail ear.jpg">
+                </li>
+                <li onclick="videoUrl('./img/video/sleep.mp4')">
+                    <img src="./img/video/thumb_sleep.jpg">
+                </li>
+            </ul>
+        </section>
+        <script>
+            function videoUrl(hm){
+                document.getElementById("vid-slider").src=hm;
+
+            }
+        </script>
+<section class="space">
+
+</section>
+
+            <!-- FROM SWIPER index.html-->
+        <section class="dr-slider">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/dermato.JPG" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Muhammed Shoubin</h2>
+                                    <a class="description" href="">Department of Dermatology</a>
+                                </div>
+                                <a class="description-hidden">MBBS, MD, DVL(ENT,Head, Neck Surgeon)</br><span>Dermatologist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/ent1.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Amjad Farook</h2>
+                                    <a class="description" href="">Department of ENT</a>
+                                </div>
+                                <a class="description-hidden">MBBS, MS (ENT,Head, Neck Surgeon)</br><span>ENT Specialist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/pulmo.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Noufal Chooriyath</h2>
+                                    <a class="description" href="">Department of Pulmonary</a>
+                                </div>
+                                <a class="description-hidden">MBBS, MD, DNB(Pulmonologist)</br><span>Pulmonologist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/neuro.JPG" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Alex Baby</h2>
+                                    <a class="description" href="">Department of Nuerology</a>
+                                </div>
+                                <a class="description-hidden">MBBS, MD, DM(Neurology)</br><span>Neurologist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/3.JPG" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Bibin Razak</h2>
+                                    <a class="description" href="">Department of Gastroenterology</a>
+                                </div>
+                                <a class="description-hidden">MBBS, MD(General Medicine), DM(Gastroenterology)</br><span>Gastroenterologist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/infet.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Jayakrishnan KB</h2>
+                                    <a class="description" href="">Department of Obstetrics and Gynecology</a>
+                                </div>
+                                <a class="description-hidden">MBBS, DGO, DNB</br><span>Infertility Specialist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/siyad.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. K A Siyad</h2>
+                                    <a class="description" href="">Department of Pediatrics</a>
+                                </div>
+                                <a class="description-hidden">MBBS, MD Paediatrics</br><span>Child Specialist</span></a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image" >
+                                    <img src="/img/doctors/arifa.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="myco">
+                                    <h2 class="name">Dr. Arifa Razak</h2>
+                                    <a class="description" href="">Managing Director</a>
+                                </div>
+                                <a class="description-hidden">MBBS</a></br>
+                                <button class="button">Make an Appoinment</button><button class="button">View Details</button>
+                            </div>
+                        </div>
+                              
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+
+       
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="#" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="#" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+
+<script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+      <!--Uncomment this line-->
+    <script src="js/script.js"></script>
+</html>

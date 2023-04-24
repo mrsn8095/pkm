@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/config/connection.js">
+    <link rel="stylesheet" href="#" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container col-12 sm-6 md-4 lg-2">
+    <h1>PKM Hospital</h1>
+        
+        <div class="header-left">
+            
+                <li onclick="location.href='/index.html'">Home</li>
+                <li>Departments
+                    <ul>
+                        <li onclick="location.href='../departments/gastro.html'">Gastroenterology</li>
+                        <li onclick="location.href='../departments/dermato.html'">Dermatology</li>
+                        <li onclick="location.href='../departments/gyneco.html'">Gynecology</li>
+                        <li onclick="location.href='../departments/gen-sur.html'">General Surgery</li>
+                        <li onclick="location.href='../departments/ent.html'">ENT</li>
+                        <li onclick="location.href='../departments/gen-med.html'">General Medicine</li>
+                        <li onclick="location.href='../departments/neuro.html'">Nuerology</li>
+                        <li onclick="location.href='../departments/osteo.html'">Osteolgy</li>
+                    </ul></li>
+                <li>Bookings
+                    <ul>
+                        <li>Make an Appoinment</li>
+                        <li>Cancel my bookings</li>
+                        <li>view my bookings</li>
+                    </ul>
+                </li>
+                <li>About</li>
+            </div>
+        </div>
+        
+            <h1 style="color: aliceblue; margin-top: 100px; margin-left: 25px;">Make an Appoinment</h1>
+        
+        <div class="booknow">
+            
+            <div class="form-label" style="float: left; width: 90px;">
+                
+                <label id="label" for="name">Name</label>
+                <label id="label" for="place">Place</label>
+                <label id="label" for="age">Age</label>
+                <label id="label" for="dep">Department</label>
+                <label id="label" for="date">Date</label>
+                <label id="label" for="timeslot">Choose Time</label>
+            </div>
+            <form method="get" action="availability.html">
+            <div class="form-data" style="float: right;">
+                <input id="input-top" name="name" type="text" placeholder="Your Name"></br>
+                <input id="input" name="place" type="text" placeholder="Your Place"></br>
+                <input id="input" name="age" type="number" placeholder="Age"></br>
+                <select name="department" id="selection" aria-placeholder="select">
+                    <option id="options" selected disabled>Select Department</option>
+                    <option id="options">Dermatology</option>
+                    <option id="options">ENT</option>
+                    <option id="options">Gastroenterology</option>
+                    <option id="options" value="">General Medicine</option>
+                    <option id="options" value="">General Surgery</option>
+                    <option id="options" value="">Gynecology</option>
+                    <option id="options" value="">Nuerology</option>
+                    <option id="options" value="">Osteology</option>
+    
+                </select></br>
+                
+                <input id="input" type="date" name="date" id=""></br>
+                <select name="timeslot" id="selection" aria-placeholder="select" >
+                    <option id="options" selected disabled>Choose Time</option>
+                    <option id="options" value="">Morning</option>
+                    <option id="options" value="">Noon</option>
+                    <option id="options" value="">Afternoon</option>
+                    <option id="options" value="">Evening</option>
+                    <option id="options" value="">Night</option>
+                </select></br>
+                <button type="submit" class="btn-book btn-success mt-4">Book Now</button> 
+            </div>
+            </form>
+        </div>
+
+
+        
+
+
+       
+    <script src="#" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="#" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

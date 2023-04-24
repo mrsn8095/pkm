@@ -1,0 +1,417 @@
+body{
+    background-image: linear-gradient(#00eb5a,#00ccff);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+.container{
+    width: 100%;
+    height: 4rem ;
+    background-color: #00000079;
+    top: 0;
+    position: fixed;
+   
+}
+.container h1{
+    float: left;
+    margin: 0;
+    width: auto;
+    padding: 10px;
+    color: #00ebe3;
+}
+.container h1:hover{
+    color: #00eb5a;
+}
+.header-left{
+    overflow: hidden;
+    float: right;
+    width: 35% auto;
+    list-style: none;
+    color: #00eb5a;
+    display: flex;
+}
+
+.header-left li{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  
+}
+.header-left li ul{
+    color: #00eb5a;
+    display: none;
+    background-color: #fff;
+    
+    list-style: none;
+}
+.header-left li:hover{
+    background-color: rgba(0, 0, 128, 0.516);
+    display: block;
+
+    color: #fff;
+
+}
+/*.header-left .icon {
+    display: none;
+}*/
+
+  @media screen and (max-width: 750px) {
+    .header-left li.ho {display: none;}
+    .header-left li.hm {
+      display: block;
+      }
+    .header-left li.icon{
+        display: block;
+    }
+    }
+.header-left li:hover > ul{
+    display: contents;
+    position: absolute;
+
+}
+.header-left li.ico:hover > ul{
+    display: contents;
+    position: absolute;
+    
+
+}
+
+.heading{
+
+    margin-top: 50px;
+    color: #fff;
+}
+.heading-l{
+    float: left;
+    width: 60%;
+    
+}
+.heading h2{
+    color: #fff;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 60px;
+}
+.heading h2:hover{
+    color: rgb(16, 138, 245);
+
+}
+.heading h4{
+    margin-left: 7%;
+    color: rgb(16, 138, 245);
+    font-size: 30px;
+
+}
+.heading h4:hover{
+    color: #fff;
+}
+.heading h5{
+    margin-left: 9%;
+    color: rgb(3, 29, 52);
+
+}
+.heading p{
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.doctor{
+   
+    position: static;
+    width: 30%;
+    float: left;
+    margin-top: 15%;
+
+}
+.doctor img{
+    height: 280px;
+    width: 280px;
+    float: right;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.skin-photos img{
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 70px;
+    border: 5px solid #fff;
+}
+.skin-photos img:hover{
+    border-radius: 0;
+    border: 0;
+    width: 450px;
+    height: 450px;
+    transition: 1s;
+   
+}
+.doctor img:hover{
+    border-radius: 0%;
+    height: 320px;
+    width: 320px;
+    transition: 1s;
+    border: 0 solid #fff;
+}
+.doctor h1{
+    color: #555;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.doctor h3{
+    color: #fff;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.btn-book{
+    color: #fff;
+    background-color: cornflowerblue;
+    border: 5px;
+    margin-top: 25px;
+    float: right;
+    margin-left: 10%;
+    font-size: 15px;
+   height: 30px;
+
+}
+.about{
+    margin-left: 20px;
+}
+.about h1{
+    margin-top: 120px;
+}
+.btn-book:hover{
+    background-color: white;
+    color: cornflowerblue;
+
+}
+.map{
+    position: static;
+    overflow: hidden;
+    width: 500px;
+    float: right;
+    margin-top: 100px;
+}
+.booknow{
+    width: 600px;
+    float: left;
+    margin: 55px;
+    height: 740px;
+}
+#label{
+    font-size: 20px;
+    float: inline-start;
+    display: inline-block;
+    height: 30px;
+    padding: 20px;
+    padding-top: 5px;
+    color: #fff;
+}
+#input{
+    color: #fff;
+    background-color: transparent;
+    width: 240px;
+    height: 30px;
+    float: right;
+    margin-top: 25px;
+    box-shadow: #555;
+}
+#input-top{
+    color: #fff;
+    background-color: transparent;
+    width: 240px;
+    height: 30px;
+    float: right;
+    margin-top: 0;
+}
+#selection{
+        color: #fff;
+        background-color: transparent;
+        width: 240px;
+        height: 30px;
+        float: right;
+        margin-top: 25px;
+    
+}
+#options{
+
+    background-color: #00eb5a;
+}
+.form-data{
+    padding: 0%;
+}
+#btn{
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: #555;
+    height: 30px;
+    width: 150px;
+    align-items: center;
+    float: right;
+}
+.booknow button :hover{
+    background-color: aqua;
+    color:#00eb5a;
+}
+.videos{
+    margin-left: 5em;
+    
+}
+.myVid{
+ 
+    width: 180%;
+}
+.thumbnail{
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    margin-left: 94px;
+}
+.thumbnail li{
+    list-style: none;
+}
+.thumbnail li img{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: 8px;
+    transition: 0.5s;
+    opacity: 25%;
+}
+.thumbnail li img:hover{
+    height: 62.5px;
+    width: 150px;
+    border-radius: 0;
+    opacity: 100%;
+}
+
+
+#vid-slider{
+    width: 680px;
+    padding-top: 80px;
+}
+.gyneco img{
+    margin-left: 80px;
+    width: 260px;
+    border-radius: 50%;
+}
+.gyneco :hover{
+    border-radius: 0;
+    width: 320px;
+    transition: 2s;
+
+}
+.index-bg{
+    height: 760px;
+    width: 100%;
+    background: #000;
+    background-image: url(/img/img2crop.jpg);
+    background-size: 100% 100%;
+   
+}
+.index-main{
+    padding-top: 400px;
+    margin-left: 200px;
+    color: #fff;
+    height: 300px;
+    width: 700px;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.index-main h1{
+
+    background-color: rgba(16, 138, 245, 0.292);
+    background: rgba(0, 0, 128, 0.53);
+
+}
+.index-main h1:hover{
+
+    background: rgba(0, 0, 128, 0.674);
+}
+.dr-slider{
+    margin: 94px;
+}
+            /*   
+                    For slider
+            */
+            .card-image img{
+                border-radius: 50%;
+                height: 280px;
+                width: 280px;
+                align-items: center;
+                margin-left: 20%;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .card-image img:hover{
+                border-radius: 10%;
+                height: 300px;
+                width: 300px;
+                transition: 1s;
+            }
+            .card-image img:hover~ .description{
+                display: contents;
+            }
+            .card{
+                align-items: center;
+                color: aliceblue;
+            }
+            .card-content{
+                margin-left: 4%;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #265DF2;
+            }
+            
+            .description-hidden{
+                color: #663c3c;
+                display: none;
+            }
+            
+            
+            .button{
+                border: none;
+                font-size: 16px;
+                color: navy;
+                padding: 08px 16px;
+                background-color: #5eff63;
+                border-radius: 6px;
+                margin-left: 14px;
+                margin-top: 0;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            .button:hover{
+                background: #265DF2;
+                color: #5eff63;
+            }
+            .myco{
+                width: 100%;
+                height: 100%;
+            }
+            .myco:hover~ .description-hidden{
+                display: block;
+            }
+            .description{
+                margin-top: 0;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .slide-container{
+                margin:auto;
+                
+            }
+.space{
+    width: 100%;
+    height: 260px;
+
+}
+  
